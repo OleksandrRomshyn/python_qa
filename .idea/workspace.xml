@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="Загружены библиотеки selenium и pytest. Тест успешно отработал.">
+    <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_group.py" afterDir="false" />
     </list>
@@ -15,6 +15,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1SSyY4rTQiuRDimMN7TgC6EN6z9" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
@@ -77,7 +80,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571582922344</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Проведён рефакторинг кода для теста по добавлению группы: методы вынесены отдельно.">
+      <created>1571592805501</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1571592805501</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -97,6 +107,7 @@
     <MESSAGE value="Улучшено описание в файле readme" />
     <MESSAGE value="Отрефакторенный код сгенерированный Katalon." />
     <MESSAGE value="Загружены библиотеки selenium и pytest. Тест успешно отработал." />
-    <option name="LAST_COMMIT_MESSAGE" value="Загружены библиотеки selenium и pytest. Тест успешно отработал." />
+    <MESSAGE value="Проведён рефакторинг кода для теста по добавлению группы: методы вынесены отдельно." />
+    <option name="LAST_COMMIT_MESSAGE" value="Проведён рефакторинг кода для теста по добавлению группы: методы вынесены отдельно." />
   </component>
 </project>

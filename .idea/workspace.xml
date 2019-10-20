@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/python_qa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/python_qa.iml" afterDir="false" />
+    <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="Загружены библиотеки selenium и pytest. Тест успешно отработал.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -71,7 +70,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571581395800</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Загружены библиотеки selenium и pytest. Тест успешно отработал.">
+      <created>1571582922344</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1571582922344</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -90,6 +96,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Улучшено описание в файле readme" />
     <MESSAGE value="Отрефакторенный код сгенерированный Katalon." />
-    <option name="LAST_COMMIT_MESSAGE" value="Отрефакторенный код сгенерированный Katalon." />
+    <MESSAGE value="Загружены библиотеки selenium и pytest. Тест успешно отработал." />
+    <option name="LAST_COMMIT_MESSAGE" value="Загружены библиотеки selenium и pytest. Тест успешно отработал." />
   </component>
 </project>

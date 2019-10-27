@@ -16,9 +16,8 @@ class AddContact(unittest.TestCase):
         self.wd.implicitly_wait(30)
 
     def test_add_contact(self):
-        wd = self.wd
-        self.login(wd, username="admin", password="secret")
-        self.new_contact_creation(wd, Contact(firstname="first_name", middlename="middle_name", lastname="last_name",
+        self.login(username="admin", password="secret")
+        self.new_contact_creation(Contact(firstname="first_name", middlename="middle_name", lastname="last_name",
                                               nickname="nickname", title="title", company="company", adress="address",
                                               telephone_home="telephone_home", telephone_mobile="telephone_mobile",
                                               telephone_work="telephone_work", telephone_fax="telephone_fax",
@@ -29,16 +28,19 @@ class AddContact(unittest.TestCase):
                                               secondary_address="Secondary_Address",
                                               secondary_phone="Secondary_Phone", secondary_notes="Secondary_Notes",
                                               image="C:\\Users\\11\\Desktop\\panda.jpg"))
-        self.logout(wd)
+        self.logout()
         
-    def logout(self, wd):
+    def logout(self):
+        wd = self.wd
         wd.find_element_by_link_text("Logout").click()
 
-    def return_to_homepage(self, wd):
+    def return_to_homepage(self):
+        wd = self.wd
         wd.find_element_by_link_text("home page").click()
 
-    def new_contact_creation(self, wd, contact):
-        self.add_new_contact(wd)
+    def new_contact_creation(self, contact):
+        wd = self.wd
+        self.add_new_contact()
         # Full Name
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
@@ -109,13 +111,15 @@ class AddContact(unittest.TestCase):
         # Submit
         wd.find_element_by_xpath(
             "(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]").click()
-        self.return_to_homepage(wd)
+        self.return_to_homepage()
 
-    def add_new_contact(self, wd):
+    def add_new_contact(self):
+        wd = self.wd
         wd.find_element_by_link_text("add new").click()
 
-    def login(self, wd, username, password):
-        self.open_home_page(wd)
+    def login(self, username, password):
+        wd = self.wd
+        self.open_home_page()
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)
@@ -123,8 +127,9 @@ class AddContact(unittest.TestCase):
         wd.find_element_by_name("pass").send_keys(password)
         wd.find_element_by_xpath("//input[@value='Login']").click()
 
-    def open_home_page(self, driver):
-        driver.get("http://localhost/addressbook/")
+    def open_home_page(self):
+        wd = self.wd
+        wd.get("http://localhost/addressbook/")
 
     def is_element_present(self, how, what):
         try: self.wd.find_element(by=how, value=what)

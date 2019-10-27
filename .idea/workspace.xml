@@ -35,7 +35,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in add_contact.py">
+  <component name="RunManager" selected="Python tests.Unittests in add_group.py">
     <configuration name="helpers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_qa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,8 +88,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in add_contact.py" />
         <item itemvalue="Python tests.Unittests in add_group.py" />
+        <item itemvalue="Python tests.pytest in add_contact.py" />
         <item itemvalue="Python.helpers" />
       </list>
     </recent_temporary>
@@ -147,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572173837445</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Перенёс низкоуровневые методы с переходами в высокоуровневые тест-методы">
+      <created>1572175305717</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1572175305717</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -171,6 +178,7 @@
     <MESSAGE value="Тест по добавлению группы: выполнена передача параметров в методы, создан класс group с конструкторомэ" />
     <MESSAGE value="Тест по добавлению контакта: сгенерировал код, провёл рефакторинг" />
     <MESSAGE value="Тест по добавлению контакта: добавил возможность загрузки фото" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тест по добавлению контакта: добавил возможность загрузки фото" />
+    <MESSAGE value="Перенёс низкоуровневые методы с переходами в высокоуровневые тест-методы" />
+    <option name="LAST_COMMIT_MESSAGE" value="Перенёс низкоуровневые методы с переходами в высокоуровневые тест-методы" />
   </component>
 </project>

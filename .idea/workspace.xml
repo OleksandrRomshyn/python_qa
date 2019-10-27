@@ -3,10 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +40,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in add_contact.py">
     <configuration name="helpers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_qa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -112,8 +108,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.pytest in add_group.py" />
         <item itemvalue="Python tests.pytest in add_contact.py" />
+        <item itemvalue="Python tests.pytest in add_group.py" />
         <item itemvalue="Python tests.Unittests in add_group.py" />
         <item itemvalue="Python.helpers" />
       </list>
@@ -200,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572181219380</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Добавил класс-фикстуру1">
+      <created>1572183357171</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1572183357171</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,6 +231,7 @@
     <MESSAGE value="Добавил строчку извлекающую ссылку на драйвер в каждый вспомогательный метод" />
     <MESSAGE value="Заменил локаторы на более короткие" />
     <MESSAGE value="Добавил класс-фикстуру" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил класс-фикстуру" />
+    <MESSAGE value="Добавил класс-фикстуру1" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил класс-фикстуру1" />
   </component>
 </project>

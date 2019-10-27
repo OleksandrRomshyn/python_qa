@@ -12,6 +12,13 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -35,7 +42,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in add_group.py">
+  <component name="RunManager" selected="Python tests.pytest in add_contact.py">
     <configuration name="helpers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_qa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,8 +95,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Unittests in add_group.py" />
         <item itemvalue="Python tests.pytest in add_contact.py" />
+        <item itemvalue="Python tests.Unittests in add_group.py" />
         <item itemvalue="Python.helpers" />
       </list>
     </recent_temporary>
@@ -154,7 +161,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572175305717</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Добавил строчку извлекающую ссылку на драйвер в каждый вспомогательный метод">
+      <created>1572177984363</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1572177984363</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -179,6 +193,7 @@
     <MESSAGE value="Тест по добавлению контакта: сгенерировал код, провёл рефакторинг" />
     <MESSAGE value="Тест по добавлению контакта: добавил возможность загрузки фото" />
     <MESSAGE value="Перенёс низкоуровневые методы с переходами в высокоуровневые тест-методы" />
-    <option name="LAST_COMMIT_MESSAGE" value="Перенёс низкоуровневые методы с переходами в высокоуровневые тест-методы" />
+    <MESSAGE value="Добавил строчку извлекающую ссылку на драйвер в каждый вспомогательный метод" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил строчку извлекающую ссылку на драйвер в каждый вспомогательный метод" />
   </component>
 </project>

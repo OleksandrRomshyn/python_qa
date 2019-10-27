@@ -84,17 +84,15 @@ class AddContact(unittest.TestCase):
         wd.find_element_by_name("homepage").send_keys(contact.homepage)
         # Birthday
         Select(wd.find_element_by_name("bday")).select_by_visible_text(contact.bday)
-        wd.find_element_by_xpath("(.//*[normalize-space(text()) and normalize-space(.)='Birthday:'])[1]/following::option[4]").click()
+        wd.find_element_by_xpath("//option[5]").click()
         Select(wd.find_element_by_name("bmonth")).select_by_visible_text(contact.bmonth)
-        wd.find_element_by_name("byear").clear()
+        wd.find_element_by_xpath("//option[@value='February']").click()
         wd.find_element_by_name("byear").send_keys(contact.byear)
         # Anniversary
         Select(wd.find_element_by_name("aday")).select_by_visible_text(contact.aday)
-        wd.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[4]").click()
+        wd.find_element_by_xpath("//select[3]/option[8]").click()
         Select(wd.find_element_by_name("amonth")).select_by_visible_text(contact.amonth)
-        wd.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Anniversary:'])[1]/following::option[36]").click()
+        wd.find_element_by_css_selector("select[name=\"amonth\"] > option[value=\"June\"]").click()
         wd.find_element_by_name("ayear").clear()
         wd.find_element_by_name("ayear").send_keys(contact.ayear)
         # Loading photo
@@ -109,8 +107,7 @@ class AddContact(unittest.TestCase):
         wd.find_element_by_name("notes").clear()
         wd.find_element_by_name("notes").send_keys(contact.secondary_notes)
         # Submit
-        wd.find_element_by_xpath(
-            "(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]").click()
+        wd.find_element_by_xpath("//input[21]").click()
         self.return_to_homepage()
 
     def add_new_contact(self):

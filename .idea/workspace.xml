@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -234,7 +232,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572190170473</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Создал классы-помошники">
+      <created>1572191944944</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1572191944944</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -266,6 +271,7 @@
     <MESSAGE value="Добавил класс-фикстуру и исправил ошибки с разрушением фикстуры" />
     <MESSAGE value="Созданы пакеты для зон ответственности" />
     <MESSAGE value="Выделен класс для управления сессиями" />
-    <option name="LAST_COMMIT_MESSAGE" value="Выделен класс для управления сессиями" />
+    <MESSAGE value="Создал классы-помошники" />
+    <option name="LAST_COMMIT_MESSAGE" value="Создал классы-помошники" />
   </component>
 </project>

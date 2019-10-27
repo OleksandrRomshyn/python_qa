@@ -17,9 +17,7 @@ class AddContact(unittest.TestCase):
 
     def test_add_contact(self):
         wd = self.wd
-        self.open_home_page(wd)
         self.login(wd, username="admin", password="secret")
-        self.add_new_contact(wd)
         self.new_contact_creation(wd, Contact(firstname="first_name", middlename="middle_name", lastname="last_name",
                                               nickname="nickname", title="title", company="company", adress="address",
                                               telephone_home="telephone_home", telephone_mobile="telephone_mobile",
@@ -31,7 +29,6 @@ class AddContact(unittest.TestCase):
                                               secondary_address="Secondary_Address",
                                               secondary_phone="Secondary_Phone", secondary_notes="Secondary_Notes",
                                               image="C:\\Users\\11\\Desktop\\panda.jpg"))
-        self.return_to_homepage(wd)
         self.logout(wd)
         
     def logout(self, wd):
@@ -41,6 +38,7 @@ class AddContact(unittest.TestCase):
         wd.find_element_by_link_text("home page").click()
 
     def new_contact_creation(self, wd, contact):
+        self.add_new_contact(wd)
         # Full Name
         wd.find_element_by_name("firstname").click()
         wd.find_element_by_name("firstname").clear()
@@ -111,11 +109,13 @@ class AddContact(unittest.TestCase):
         # Submit
         wd.find_element_by_xpath(
             "(.//*[normalize-space(text()) and normalize-space(.)='Notes:'])[1]/following::input[1]").click()
+        self.return_to_homepage(wd)
 
     def add_new_contact(self, wd):
         wd.find_element_by_link_text("add new").click()
 
     def login(self, wd, username, password):
+        self.open_home_page(wd)
         wd.find_element_by_name("user").click()
         wd.find_element_by_name("user").clear()
         wd.find_element_by_name("user").send_keys(username)

@@ -4,7 +4,7 @@
     <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,8 +89,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.pytest in add_contact.py" />
-        <item itemvalue="Python.helpers" />
         <item itemvalue="Python tests.Unittests in add_group.py" />
+        <item itemvalue="Python.helpers" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +140,14 @@
       <option name="project" value="LOCAL" />
       <updated>1571947669855</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Тест по добавлению контакта: добавил возможность загрузки фото">
+      <created>1572173837445</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1572173837445</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -163,6 +170,7 @@
     <MESSAGE value="Проведён рефакторинг кода для теста по добавлению группы: методы вынесены отдельно." />
     <MESSAGE value="Тест по добавлению группы: выполнена передача параметров в методы, создан класс group с конструкторомэ" />
     <MESSAGE value="Тест по добавлению контакта: сгенерировал код, провёл рефакторинг" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тест по добавлению контакта: сгенерировал код, провёл рефакторинг" />
+    <MESSAGE value="Тест по добавлению контакта: добавил возможность загрузки фото" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест по добавлению контакта: добавил возможность загрузки фото" />
   </component>
 </project>

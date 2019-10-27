@@ -3,11 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/add_contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/add_group.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/contact.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/model/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/add_contact.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -32,6 +30,13 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyIntegratedToolsModulesConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PythonRepo\python_qa\fixture" />
+      <recent name="C:\PythonRepo\python_qa\test" />
+      <recent name="C:\PythonRepo\python_qa\model" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -215,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572184273894</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Созданы пакеты для зон ответственности">
+      <created>1572189651154</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1572189651154</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -245,6 +257,7 @@
     <MESSAGE value="Добавил класс-фикстуру" />
     <MESSAGE value="Добавил класс-фикстуру1" />
     <MESSAGE value="Добавил класс-фикстуру и исправил ошибки с разрушением фикстуры" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил класс-фикстуру и исправил ошибки с разрушением фикстуры" />
+    <MESSAGE value="Созданы пакеты для зон ответственности" />
+    <option name="LAST_COMMIT_MESSAGE" value="Созданы пакеты для зон ответственности" />
   </component>
 </project>

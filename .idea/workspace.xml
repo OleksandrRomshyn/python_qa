@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/application.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -40,7 +44,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in add_contact.py">
+  <component name="RunManager" selected="Python tests.pytest in add_group.py">
     <configuration name="helpers" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="python_qa" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -91,8 +95,24 @@
       <option name="_new_targetType" value="&quot;PATH&quot;" />
       <method v="2" />
     </configuration>
+    <configuration name="pytest in add_group.py" type="tests" factoryName="py.test" temporary="true" nameIsGenerated="true">
+      <module name="python_qa" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_keywords" value="&quot;&quot;" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/add_group.py&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.pytest in add_group.py" />
         <item itemvalue="Python tests.pytest in add_contact.py" />
         <item itemvalue="Python tests.Unittests in add_group.py" />
         <item itemvalue="Python.helpers" />
@@ -173,7 +193,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572181123280</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Добавил класс-фикстуру">
+      <created>1572181219380</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1572181219380</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,6 +227,7 @@
     <MESSAGE value="Перенёс низкоуровневые методы с переходами в высокоуровневые тест-методы" />
     <MESSAGE value="Добавил строчку извлекающую ссылку на драйвер в каждый вспомогательный метод" />
     <MESSAGE value="Заменил локаторы на более короткие" />
-    <option name="LAST_COMMIT_MESSAGE" value="Заменил локаторы на более короткие" />
+    <MESSAGE value="Добавил класс-фикстуру" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил класс-фикстуру" />
   </component>
 </project>

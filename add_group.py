@@ -1,5 +1,4 @@
 # -*- coding: utf-8 -*-
-from selenium.common.exceptions import NoSuchElementException
 import pytest
 from group import Group
 from application import Application
@@ -23,13 +22,5 @@ def test_add_empty_group(app):
     app.create_new_group(Group(name="", header="", footer=""))
     app.logout()
 
-    def is_element_present(self, how, what):
-        try:
-            self.wd.find_element(by=how, value=what)
-        except NoSuchElementException as e:
-            return False
-        return True
 
 
-if __name__ == "__main__":
-    unittest.main()

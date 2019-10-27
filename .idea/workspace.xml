@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/add_contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_contact.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/add_group.py" beforeDir="false" afterPath="$PROJECT_DIR$/add_group.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -168,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1572177984363</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Заменил локаторы на более короткие">
+      <created>1572181123280</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1572181123280</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,6 +199,7 @@
     <MESSAGE value="Тест по добавлению контакта: добавил возможность загрузки фото" />
     <MESSAGE value="Перенёс низкоуровневые методы с переходами в высокоуровневые тест-методы" />
     <MESSAGE value="Добавил строчку извлекающую ссылку на драйвер в каждый вспомогательный метод" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил строчку извлекающую ссылку на драйвер в каждый вспомогательный метод" />
+    <MESSAGE value="Заменил локаторы на более короткие" />
+    <option name="LAST_COMMIT_MESSAGE" value="Заменил локаторы на более короткие" />
   </component>
 </project>

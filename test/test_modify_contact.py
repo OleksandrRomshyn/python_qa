@@ -2,7 +2,6 @@ from model.contact import Contact
 
 
 def test_modify_first_contact(app):
-    app.session.login(username="admin", password="secret")
     app.contact.modify_first_contact(Contact(firstname="edited_first_name", middlename="edited_middle_name", lastname="edited_last_name",
                                              nickname="edited_nickname", title="edited_title", company="edited_company", adress="edited_address",
                                              telephone_home="edited_telephone_home", telephone_mobile="edited_telephone_mobile",
@@ -13,4 +12,3 @@ def test_modify_first_contact(app):
                                              secondary_address="edited_Secondary_Address",
                                              secondary_phone="edited_Secondary_Phone", secondary_notes="edited_Secondary_Notes",
                                              image="C:\\Users\\11\\Desktop\\edited_panda.jpg"))
-    app.session.logout()

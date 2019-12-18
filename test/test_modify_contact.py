@@ -2,6 +2,8 @@ from model.contact import Contact
 
 
 def test_modify_first_contact(app):
+    if app.contact.count() == "0":
+        app.contact.create(Contact(firstname="Pre_created_contact"))
     app.contact.modify_first_contact(Contact(firstname="edited_first_name", middlename="edited_middle_name", lastname="edited_last_name",
                                              nickname="edited_nickname", title="edited_title", company="edited_company", adress="edited_address",
                                              telephone_home="edited_telephone_home", telephone_mobile="edited_telephone_mobile",

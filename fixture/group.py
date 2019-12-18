@@ -33,22 +33,30 @@ class GroupHelper:
         wd = self.app.wd
         wd.find_element_by_link_text("group page").click()
 
-    def modify_first_group(self, group):
+    def modify_first_group(self, data):
         wd = self.app.wd
         self.open_groups_page()
         wd.find_element_by_name("selected[]").click()
         wd.find_element_by_name("edit").click()
-        self.fill_group_fields(group)
+        self.fill_group_fields(data)
         wd.find_element_by_name("update").click()
         self.return_to_groups_page()
 
     def fill_group_fields(self, group):
         wd = self.app.wd
-        wd.find_element_by_name("group_name").click()
-        wd.find_element_by_name("group_name").clear()
-        wd.find_element_by_name("group_name").send_keys(group.name)
-        wd.find_element_by_name("group_header").clear()
-        wd.find_element_by_name("group_header").send_keys(group.header)
-        wd.find_element_by_name("group_footer").clear()
-        wd.find_element_by_name("group_footer").send_keys(group.footer)
+        self.filed_filling_verification("group_name", group.name)
+        self.filed_filling_verification("group_header", group.header)
+        self.filed_filling_verification("group_footer", group.footer)
+
+    def filed_filling_verification(self, field_name, text):
+        wd = self.app.wd
+        if text is not None:
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).clear()
+            wd.find_element_by_name(field_name).send_keys(text)
+
+    def count(self):
+        wd = self.app.wd
+        self.open_groups_page()
+        return len(wd.find_elements_by_name("selected[]"))
 

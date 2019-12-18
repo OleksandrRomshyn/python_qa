@@ -35,69 +35,50 @@ class ContactHelper:
 
     def fill_contact_fields(self, contact):
         wd = self.app.wd
-        wd.find_element_by_name("firstname").click()
-        wd.find_element_by_name("firstname").clear()
-        wd.find_element_by_name("firstname").send_keys(contact.firstname)
-        wd.find_element_by_name("middlename").clear()
-        wd.find_element_by_name("middlename").send_keys(contact.middlename)
-        wd.find_element_by_name("lastname").clear()
-        wd.find_element_by_name("lastname").send_keys(contact.lastname)
-        # Nickname and Title
-        wd.find_element_by_name("nickname").clear()
-        wd.find_element_by_name("nickname").send_keys(contact.nickname)
-        wd.find_element_by_name("title").click()
-        wd.find_element_by_name("title").clear()
-        wd.find_element_by_name("title").send_keys(contact.title)
-        # Work and Home address
-        wd.find_element_by_name("company").clear()
-        wd.find_element_by_name("company").send_keys(contact.company)
-        wd.find_element_by_name("address").clear()
-        wd.find_element_by_name("address").send_keys(contact.adress)
-        # Work and personal telephone numbers
-        wd.find_element_by_name("home").clear()
-        wd.find_element_by_name("home").send_keys(contact.telephone_home)
-        wd.find_element_by_name("home").send_keys(Keys.UP)
-        wd.find_element_by_name("home").send_keys(Keys.TAB)
-        wd.find_element_by_name("mobile").clear()
-        wd.find_element_by_name("mobile").send_keys(contact.telephone_mobile)
-        wd.find_element_by_name("work").clear()
-        wd.find_element_by_name("work").send_keys(contact.telephone_work)
-        wd.find_element_by_name("fax").clear()
-        wd.find_element_by_name("fax").send_keys(contact.telephone_fax)
-        # Emails
-        wd.find_element_by_name("email").click()
-        wd.find_element_by_name("email").clear()
-        wd.find_element_by_name("email").send_keys(contact.mail1)
-        wd.find_element_by_name("email2").clear()
-        wd.find_element_by_name("email2").send_keys(contact.mail2)
-        wd.find_element_by_name("email3").clear()
-        wd.find_element_by_name("email3").send_keys(contact.mail3)
-        # Personal web site
-        wd.find_element_by_name("homepage").clear()
-        wd.find_element_by_name("homepage").send_keys(contact.homepage)
-        # Birthday
-        Select(wd.find_element_by_name("bday")).select_by_visible_text(contact.bday)
-        # wd.find_element_by_xpath("//option[5]").click()
-        Select(wd.find_element_by_name("bmonth")).select_by_visible_text(contact.bmonth)
-        # wd.find_element_by_xpath("//option[@value='February']").click()
-        wd.find_element_by_name("byear").clear()
-        wd.find_element_by_name("byear").send_keys(contact.byear)
-        # Anniversary
-        Select(wd.find_element_by_name("aday")).select_by_visible_text(contact.aday)
-        # wd.find_element_by_xpath("//select[3]/option[8]").click()
-        Select(wd.find_element_by_name("amonth")).select_by_visible_text(contact.amonth)
-        # wd.find_element_by_css_selector("select[name=\"amonth\"] > option[value=\"June\"]").click()
-        wd.find_element_by_name("ayear").clear()
-        wd.find_element_by_name("ayear").send_keys(contact.ayear)
-        # Loading photo
-        wd.find_element_by_xpath("//input[@name='photo']").clear()
-        wd.find_element_by_xpath("//input[@name='photo']").send_keys(contact.image)
-        # Secondary address, phone number, notes
-        wd.find_element_by_name("address2").click()
-        wd.find_element_by_name("address2").clear()
-        wd.find_element_by_name("address2").send_keys(contact.secondary_address)
-        wd.find_element_by_name("phone2").clear()
-        wd.find_element_by_name("phone2").send_keys(contact.secondary_phone)
-        wd.find_element_by_name("notes").clear()
-        wd.find_element_by_name("notes").send_keys(contact.secondary_notes)
+        self.filled_text_field_verification_contact("firstname", contact.firstname)
+        self.filled_text_field_verification_contact("middlename", contact.middlename)
+        self.filled_text_field_verification_contact("lastname", contact.lastname)
+        self.filled_text_field_verification_contact("nickname", contact.nickname)
+        self.filled_text_field_verification_contact("title", contact.title)
+        self.filled_text_field_verification_contact("company", contact.company)
+        self.filled_text_field_verification_contact("address", contact.adress)
+        self.filled_text_field_verification_contact("home", contact.telephone_home)
+        self.filled_text_field_verification_contact("mobile", contact.telephone_mobile)
+        self.filled_text_field_verification_contact("work", contact.telephone_work)
+        self.filled_text_field_verification_contact("fax", contact.telephone_fax)
+        self.filled_text_field_verification_contact("email", contact.mail1)
+        self.filled_text_field_verification_contact("email2", contact.mail2)
+        self.filled_text_field_verification_contact("email3", contact.mail3)
+        self.filled_text_field_verification_contact("homepage", contact.homepage)
+        self.filled_text_field_verification_contact("address2", contact.secondary_address)
+        self.filled_text_field_verification_contact("phone2", contact.secondary_phone)
+        self.filled_text_field_verification_contact("notes", contact.secondary_notes)
+        self.filled_image_field_verification_contact(contact.image)
+        self.filled_text_field_verification_contact("byear", contact.byear)
+        self.filled_text_field_verification_contact("ayear", contact.ayear)
+        self.filled_additional_field_verification_contact("bday", contact.bday)
+        self.filled_additional_field_verification_contact("bmonth", contact.bmonth)
+        self.filled_additional_field_verification_contact("aday", contact.aday)
+        self.filled_additional_field_verification_contact("amonth", contact.amonth)
 
+    def filled_image_field_verification_contact(self, image_path):
+        wd = self.app.wd
+        if image_path is not None:
+            wd.find_element_by_xpath("//input[@name='photo']").send_keys(image_path)
+
+    def filled_text_field_verification_contact(self, field_name, input_data):
+        wd = self.app.wd
+        if input_data is not None:
+            wd.find_element_by_name(field_name).click()
+            wd.find_element_by_name(field_name).clear()
+            wd.find_element_by_name(field_name).send_keys(input_data)
+
+    def filled_additional_field_verification_contact(self, field_name, input_data):
+        wd = self.app.wd
+        if input_data is not None:
+            wd.find_element_by_name(field_name).click()
+            Select(wd.find_element_by_name(field_name)).select_by_visible_text(input_data)
+
+    def count(self):
+        wd = self.app.wd
+        return wd.find_element_by_css_selector("#search_count").text

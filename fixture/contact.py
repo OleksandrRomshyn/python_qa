@@ -81,4 +81,5 @@ class ContactHelper:
 
     def count(self):
         wd = self.app.wd
+        wd.app.open_home_page()
         return wd.find_element_by_css_selector("#search_count").text

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f198d9b4-8c5c-4e45-9bae-013160686347" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/application.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/application.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/fixture/group.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/group.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/fixture/contact.py" beforeDir="false" afterPath="$PROJECT_DIR$/fixture/contact.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -294,7 +293,14 @@
       <option name="project" value="LOCAL" />
       <updated>1576673316345</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="Добавил проверку перед переходом на страницу">
+      <created>1576676119123</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1576676119123</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -333,6 +339,7 @@
     <MESSAGE value="Выделил отдельные классы для заполнения полей Группы и Контакта, чтобы избежать дублирования кода." />
     <MESSAGE value="Реализовал валидацию фикстуры. Реализовал интеллектуальный login и logout" />
     <MESSAGE value="Добавил проверку на наличие группы или контакта перед их модификацией и удалением" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавил проверку на наличие группы или контакта перед их модификацией и удалением" />
+    <MESSAGE value="Добавил проверку перед переходом на страницу" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавил проверку перед переходом на страницу" />
   </component>
 </project>
